@@ -45,8 +45,3 @@ Build an AI object detector app using Next.js 14, Tailwind CSS, and TensorFlow, 
 3. **Custom Object Detection**: Allow users to train the app to detect their own set of objects.
 4. **Advanced Alarm Features**: Add custom alerts for different objects, with notifications via mobile or email.
 5. **Multi-Language Support**: Introduce multi-language support to cater to a global audience.
-
----
-
-<h4>🌐 Live Demo</h4>  
-Try the app here: [Live Demo](SOON DEPLOYED)
