@@ -4,30 +4,59 @@
 
 :root {
     --background: #ffffff;
+    /* Light theme background */
     --foreground: #171717;
+    /* Light theme text color */
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #0a0a0a;
+        /* Dark theme background */
         --foreground: #ededed;
+        /* Dark theme text color */
     }
 }
 
 body {
     color: var(--foreground);
     background: var(--background);
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
+
+    /* Text balancing for better readability */
     .text-balance {
         text-wrap: balance;
     }
+
+    /* Gradient utility for backgrounds */
     .gradient {
         @apply bg-gradient-to-b from-white via-gray-300 to-gray-600;
     }
+
+    /* Gradient text utility */
     .gradient-title {
-        @apply gradient text-transparent bg-clip-text;
+        @apply bg-gradient-to-b from-white via-gray-300 to-gray-600 text-transparent bg-clip-text;
+    }
+
+    /* Custom scrollbar for better UX */
+    .scrollbar-custom {
+        scrollbar-width: thin;
+        scrollbar-color: #2563EB #f3f4f6;
+    }
+
+    .scrollbar-custom::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .scrollbar-custom::-webkit-scrollbar-track {
+        background: #f3f4f6;
+    }
+
+    .scrollbar-custom::-webkit-scrollbar-thumb {
+        background-color: #2563EB;
+        border-radius: 4px;
+        border: 2px solid #f3f4f6;
     }
 }
